@@ -13,9 +13,7 @@
     using Sitecore.Feature.VideoReviews.Extensions;
 
     public class VideoReviewsService : IVideoReviewsService
-    {
-
-        //TODO:pick value from configuration
+    {   
         private static readonly TimeSpan APITimeout = new TimeSpan(0, 0, 10);
         public virtual VideoReviews GetReviews(Item expoTvsettings, string sku)
         {

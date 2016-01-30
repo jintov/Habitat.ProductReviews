@@ -170,8 +170,6 @@
     <Compile Include="Repositories\IReviewsRepository.cs" />
     <Compile Include="Services\IReviewsService.cs" />
     <Compile Include="Services\ReviewsService.cs" />
-    <Compile Include="Services\ReviewsTrackerService.cs" />
-    <Compile Include="Services\IReviewsTrackerService.cs" />
     <Compile Include="Templates.cs" />
     <Compile Include="Texts\Captions.cs" />
   </ItemGroup>

@@ -27,14 +27,14 @@
         public Item GetGlobalSetting()
         {
             //TODO: replace with actual settings path
-            string globalSettingsPath = "";
+            string globalSettingsPath = "{F1BB8AA8-F01E-43A1-8FBF-BC17BA6CF859}";
             return this.ContextItem.Database.GetItem(globalSettingsPath);
         }
 
         public string GetSku()
         {
             //TODO: replace with actual Sku field id
-            return this.ContextItem.FieldHasValue(ID.NewID) ? ContextItem.GetString(ID.NewID) : string.Empty;
+            return this.ContextItem.FieldHasValue(Templates.HasVideoReviews.Fields.VideoReviewSKU) ? ContextItem.GetString(Templates.HasVideoReviews.Fields.VideoReviewSKU) : string.Empty;
         }
     }
 }

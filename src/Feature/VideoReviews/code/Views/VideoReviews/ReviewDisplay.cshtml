@@ -1,5 +1,85 @@
 ﻿@model Sitecore.Feature.VideoReviews.Models.VideoReviews
+<!-- Video reviews HTML-->
 
-<div>
+<style>
+    .star-ratings-sprite {
+        background: url("/images/star-rating-sprite.png") repeat-x;
+        font-size: 0;
+        height: 21px;
+        line-height: 0;
+        overflow: hidden;
+        text-indent: -999em;
+        width: 110px;
+        margin: 0 0 10px;
+    }
+
+    .rating {
+        background: url("/images/star-rating-sprite.png") repeat-x;
+        background-position: 0 100%;
+        float: left;
+        height: 21px;
+        display: block;
+    }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Video Reviews
+    </div>
+    @if (Model != null)
+    {
+        foreach (var item in Model.Reviews)
+        {
+            if (Model.Reviews != null && Model.Reviews.Count() > 0)
+            {
+                <div class="panel panel-body">
+
+                    <div class="panel-body col-md-4">
+                        <div class="td">
+                            <h3>
+                                <span>@item.UserName</span>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <div class="panel-body col-md-4">
+                        <div class="td">
+                            <div>
+                                <div>
+                                    <div class="star-ratings-sprite"><span style="@item.RatingPercentage" class="rating"></span></div>
+                                </div>
+                                <span class="reviewtxt">
+                                    @item.Date
+                                </span>
+                                <div>
+                                    <a id="anchrExpoTV" href="@item.VideoUrl" target="_blank">
+                                        <img id="imgVideoThumbnail" width="100" src="@item.ThumbnailImage" alt="@item.Title">
+                                    </a>
+                                    <div class="player-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel-body col-md-4">
+                        <div class="td">
+
+                            <div>
+                                <h3>
+                                    @item.Title
+                                </h3>
+                                @item.Description
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            }
+
+        }
+    }
+    
+
 
 </div>

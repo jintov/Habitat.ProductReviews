@@ -81,8 +81,8 @@
         private NameValueCollection GetHeadersForRequest(Item expoTvsettings)
         {
             NameValueCollection headers = new NameValueCollection();
-            headers.Add("X-Expo_API_version", (expoTvsettings.FieldHasValue(Templates.VideoReviewsSettings.Fields.ClientId) ?
-                expoTvsettings.GetString("ApiVersion") : "2.0"));
+            headers.Add("X-Expo_API_version", (expoTvsettings.FieldHasValue(Templates.VideoReviewsSettings.Fields.ApiVersion) ?
+                expoTvsettings.GetString(Templates.VideoReviewsSettings.Fields.ApiVersion) : "2.0"));
             headers.Add("X-Expo_API_client_id", (expoTvsettings.FieldHasValue(Templates.VideoReviewsSettings.Fields.ClientId) ?
                 expoTvsettings.GetString(Templates.VideoReviewsSettings.Fields.ClientId) : string.Empty));
             return headers;

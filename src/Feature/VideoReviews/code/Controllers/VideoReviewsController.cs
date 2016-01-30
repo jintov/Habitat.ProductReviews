@@ -11,7 +11,7 @@
   {
     private readonly IVideoReviewsRepository videoReviewsRepository;
 
-    public VideoReviewsController() : this(new VideoReviewsRepository())
+    public VideoReviewsController() : this(new VideoReviewsRepository(Context.Item))
     {
     }
 

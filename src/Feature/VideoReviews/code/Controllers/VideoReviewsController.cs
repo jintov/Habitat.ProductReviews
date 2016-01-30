@@ -15,7 +15,7 @@
         private readonly IVideoReviewsService videoReviewsService;
         private readonly IVideoReviewsRepository videoReviewsRepository;
 
-        public VideoReviewsController() : this(new VideoReviewsRepository(Context.Item), new VideoReviewsService())
+        public VideoReviewsController() : this(new VideoReviewsRepository(Context.Item, Context.Site), new VideoReviewsService())
         {
 
         }

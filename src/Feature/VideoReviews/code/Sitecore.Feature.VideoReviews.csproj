@@ -148,6 +148,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\VideoReviews\VideoReviewSummary.cshtml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Views\VideoReviews\ReviewDisplay.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -163,7 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigSettings.cs" />
+    <Compile Include="Extensions\XmlExtensions.cs" />
     <Compile Include="Helpers\ExpoTvExternalProviderClient.cs" />
+    <Compile Include="Models\Review.cs" />
     <Compile Include="Models\VideoReviews.cs" />
     <Compile Include="Models\VideoReviewSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -178,7 +181,6 @@
     <Compile Include="Texts\Captions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Extensions\" />
     <Folder Include="Pipelines\" />
     <Folder Include="Scripts\Reviews\" />
   </ItemGroup>

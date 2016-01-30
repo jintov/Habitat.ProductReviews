@@ -7,5 +7,11 @@ namespace Sitecore.Feature.VideoReviews.Models
 {
     public class VideoReviews
     {
+        public VideoReviews()
+        {
+            this.Reviews = new List<Review>();
+        }
+
+        public List<Review> Reviews { get; private set; }
     }
 }

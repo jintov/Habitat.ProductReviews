@@ -1,7 +1,7 @@
 module.exports = function () {
     var config = {
-    websiteRoot: "D:\\Sites\\HackIt\\Website",
-    sitecoreLibraries: "D:\\Sites\\HackIt\\Website\\bin",
+        websiteRoot: "D:\\Hackathon\\Sitecore 8.1 rev. 151207\\Website",
+        sitecoreLibraries: "D:\\Hackathon\\Sitecore 8.1 rev. 151207\\Website\\bin",
     solutionName: "Habitat.ProductReviews",
     buildConfiguration: "Debug"
     }

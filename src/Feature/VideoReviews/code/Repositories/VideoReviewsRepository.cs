@@ -43,8 +43,7 @@
         }
 
         public string GetSku()
-        {            
-            //TODO: replace with actual Sku field id
+        {                        
             return this.ContextItem.FieldHasValue(Templates.HasVideoReviews.Fields.VideoReviewSKU) ? ContextItem.GetString(Templates.HasVideoReviews.Fields.VideoReviewSKU) : string.Empty;
         }
     }

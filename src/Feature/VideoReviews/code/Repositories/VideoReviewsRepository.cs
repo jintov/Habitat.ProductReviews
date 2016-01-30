@@ -33,7 +33,7 @@
 
         public Item GetGlobalSetting()
         {   
-            Item currentItem = this.ContextItem.Database.GetItem(CurrentSite.StartPath);
+            Item currentItem = this.ContextItem.Database.GetItem(CurrentSite.RootPath);
             if (currentItem != null)
             {
                return currentItem.Axes.GetDescendants().Where(item => item.TemplateID == ID.Parse("{15FD06FF-FB4D-484C-AE2B-F2F63EBA3263}"))

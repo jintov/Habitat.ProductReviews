@@ -6,7 +6,7 @@
     {
         public struct VideoReviewsSettings
         {
-            public static ID ID = new ID("");
+            public static ID ID = new ID("{15FD06FF-FB4D-484C-AE2B-F2F63EBA3263}");
 
             public struct Fields
             {
@@ -24,7 +24,7 @@
 
         public struct HasVideoReviews
         {
-            public static ID ID = new ID("");
+            public static ID ID = new ID("{E32A3F15-EA85-46BC-B6DA-6BEF41076270}");
 
             public struct Fields
             {

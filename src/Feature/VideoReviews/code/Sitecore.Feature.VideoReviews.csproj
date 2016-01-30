@@ -164,6 +164,7 @@
   <ItemGroup>
     <Compile Include="ConfigSettings.cs" />
     <Compile Include="Helpers\ExpoTvExternalProviderClient.cs" />
+    <Compile Include="Models\VideoReviews.cs" />
     <Compile Include="Models\VideoReviewSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\VideoReviewsController.cs" />

@@ -175,8 +175,6 @@
     <Compile Include="Repositories\IVideoReviewsRepository.cs" />
     <Compile Include="Services\IVideoReviewsService.cs" />
     <Compile Include="Services\VideoReviewsService.cs" />
-    <Compile Include="Services\VideoReviewsTrackerService.cs" />
-    <Compile Include="Services\IVideoReviewsTrackerService.cs" />
     <Compile Include="Templates.cs" />
     <Compile Include="Texts\Captions.cs" />
   </ItemGroup>

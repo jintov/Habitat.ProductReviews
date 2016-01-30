@@ -22,8 +22,8 @@
             VideoReviews videoReviewResponse = null;
             if (expoTvsettings != null && !string.IsNullOrWhiteSpace(sku))
             {
-                string expoTvUrl = expoTvsettings.FieldHasValue(Templates.VideoReviewsSettings.Fields.DetailedReviewURL) ?
-                      expoTvsettings.GetString(Templates.VideoReviewsSettings.Fields.DetailedReviewURL) + "/" + sku : string.Empty;
+                string expoTvUrl = 
+                      expoTvsettings.GetString(Templates.VideoReviewsSettings.Fields.DetailedReviewURL) + "/" + sku;
                 if (!string.IsNullOrWhiteSpace(expoTvUrl))
                 {
                     NameValueCollection headers = GetHeadersForRequest(expoTvsettings);
@@ -32,7 +32,7 @@
                     if (expoResponseDoc != null && expoResponseDoc.Root != null &&
                         expoResponseDoc.Root.Element("reviews") != null)
                     {
-                        IEnumerable<XElement> reviewItems = expoResponseDoc.Root.Elements("review_item");
+                        IEnumerable<XElement> reviewItems = expoResponseDoc.Root.Element("reviews").Elements("review_item");
                         ////get the request info sections
                         //videoResponse = GetRequestInformation(doc.Root.Element("request_information"), videoReviewResponse);
                         //get the reviews

@@ -4,6 +4,6 @@
 
     public static class Captions
     {
-        public static string Reviews => DictionaryRepository.Get("/Reviews/Captions/Reviews", "reviews");
+        public static string Reviews => DictionaryRepository.Get("/VideoReviews/Captions/Reviews", "Video Reviews");
     }
 }

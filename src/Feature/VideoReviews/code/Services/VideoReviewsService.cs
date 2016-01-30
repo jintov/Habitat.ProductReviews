@@ -33,9 +33,7 @@
                         expoResponseDoc.Root.Element("reviews") != null)
                     {
                         IEnumerable<XElement> reviewItems = expoResponseDoc.Root.Element("reviews").Elements("review_item");
-                        ////get the request info sections
-                        //videoResponse = GetRequestInformation(doc.Root.Element("request_information"), videoReviewResponse);
-                        //get the reviews
+                        
                         videoReviewResponse = GetReviewsFromXml(reviewItems);
                     }
                 }

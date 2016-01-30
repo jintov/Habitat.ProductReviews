@@ -2,7 +2,7 @@ module.exports = function () {
     var config = {
     websiteRoot: "D:\\Sites\\HackIt\\Website",
     sitecoreLibraries: "D:\\Sites\\HackIt\\Website\\bin",
-    solutionName: "ProductReviews",
+    solutionName: "Habitat.ProductReviews",
     buildConfiguration: "Debug"
     }
     return config;

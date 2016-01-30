@@ -147,6 +147,7 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="Views\VideoReviews\VideoReviewSummary.cshtml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

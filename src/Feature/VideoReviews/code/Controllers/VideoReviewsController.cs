@@ -14,13 +14,13 @@
         private readonly IVideoReviewsService videoReviewsService;
         private readonly IVideoReviewsRepository videoReviewsRepository;
 
-        public VideoReviewsController() : this(new VideoReviewsRepository(Context.Item))
+        public VideoReviewsController() : this(new VideoReviewsRepository(Context.Item), new VideoReviewsService())
         {
             Item globalSetting = this.videoReviewsRepository.GetGlobalSetting();
             string skuId = this.videoReviewsRepository.GetSku();
             if (globalSetting != null && !string.IsNullOrWhiteSpace(skuId))
             {
-                this.videoReviewsService.GetReviews(globalSetting, sku);
+                this.videoReviewsService.GetReviews(globalSetting, skuId);
             }
 
         }
